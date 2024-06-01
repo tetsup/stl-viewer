@@ -1,0 +1,9 @@
+version: "3"
+services:
+  nginx:
+    restart: always
+    build: .
+    ports:
+      - "8887:80"
+    volumes:
+      - "./models:/usr/share/nginx/html/models"
